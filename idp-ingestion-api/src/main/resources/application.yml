@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: idp-ingestion-api
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 55MB
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${COGNITO_ISSUER_URI:https://cognito-idp.eu-west-1.amazonaws.com/eu-west-1_placeholder}
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+
+server:
+  port: 8080
+
+aws:
+  region: ${AWS_REGION:eu-west-1}
+  s3:
+    bucket: ${S3_BUCKET:idp-documents}
+  dynamodb:
+    table: ${DYNAMODB_TABLE:idp-documents}
+  sqs:
+    batch-queue-url: ${SQS_BATCH_QUEUE_URL:https://sqs.eu-west-1.amazonaws.com/000000000000/idp-batch-queue}
+  cache:
+    ttl-seconds: ${CACHE_TTL_SECONDS:300}
+
+idp:
+  throttling:
+    capacity-limit: ${THROTTLING_CAPACITY_LIMIT:100}
+
+logging:
+  pattern:
+    console: '{"timestamp":"%d{ISO8601}","level":"%p","logger":"%c{1}","message":"%m"}%n'
+  level:
+    com.idp: INFO

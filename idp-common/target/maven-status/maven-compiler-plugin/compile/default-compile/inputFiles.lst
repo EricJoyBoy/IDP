@@ -1,0 +1,13 @@
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/model/BoundingBox.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/model/CategoryCandidate.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/model/ClassificationResult.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/model/DocumentDTO.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/model/DocumentStatus.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/model/Entity.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/model/ExtractedContent.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/model/KPI.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/model/KeyValuePair.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/model/Table.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/serialization/DocumentObjectMapper.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/serialization/DocumentSerializer.java
+/Users/ericmarins/Documents/opensource/IDP/idp-common/src/main/java/com/idp/common/validation/DocumentSchemaValidator.java

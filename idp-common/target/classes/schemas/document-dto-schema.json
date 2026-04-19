@@ -1,0 +1,47 @@
+{
+  "title": "DocumentDTO",
+  "type": "object",
+  "required": ["documentId", "tenantId", "status"],
+  "properties": {
+    "documentId": {
+      "type": "string",
+      "description": "Unique document identifier"
+    },
+    "tenantId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "s3Key": {
+      "type": ["string", "null"]
+    },
+    "format": {
+      "type": ["string", "null"]
+    },
+    "sizeBytes": {
+      "type": ["integer", "null"],
+      "minimum": 0
+    },
+    "uploadTimestamp": {
+      "type": ["string", "null"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["PENDING", "PROCESSING", "COMPLETED", "FAILED", "NEEDS_REVIEW", "PERSISTENCE_ERROR"]
+    },
+    "content": {
+      "type": ["object", "null"]
+    },
+    "entities": {
+      "type": ["array", "null"]
+    },
+    "classification": {
+      "type": ["object", "null"]
+    },
+    "kpis": {
+      "type": ["array", "null"]
+    },
+    "processedTimestamp": {
+      "type": ["string", "null"]
+    }
+  }
+}
